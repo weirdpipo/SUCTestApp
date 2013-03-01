@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46BB7F8116E02E87003E0379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB7F8016E02E87003E0379 /* UIKit.framework */; };
+		46BB7F8316E02E87003E0379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB7F8216E02E87003E0379 /* Foundation.framework */; };
+		46BB7F8516E02E87003E0379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB7F8416E02E87003E0379 /* CoreGraphics.framework */; };
+		46BB7F8B16E02E87003E0379 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7F8916E02E87003E0379 /* InfoPlist.strings */; };
+		46BB7F8D16E02E87003E0379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7F8C16E02E87003E0379 /* main.m */; };
+		46BB7F9116E02E87003E0379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7F9016E02E87003E0379 /* AppDelegate.m */; };
+		46BB7F9316E02E87003E0379 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7F9216E02E87003E0379 /* Default.png */; };
+		46BB7F9516E02E87003E0379 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7F9416E02E87003E0379 /* Default@2x.png */; };
+		46BB7F9716E02E87003E0379 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7F9616E02E87003E0379 /* Default-568h@2x.png */; };
+		46BB7F9A16E02E87003E0379 /* FoursquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7F9916E02E87003E0379 /* FoursquareViewController.m */; };
+		46BB7F9D16E02E87003E0379 /* FoursquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7F9B16E02E87003E0379 /* FoursquareViewController.xib */; };
+		46BB7FA716E0342F003E0379 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB7FA616E0342F003E0379 /* CoreLocation.framework */; };
+		46BB7FA916E0344F003E0379 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB7FA816E0344F003E0379 /* MapKit.framework */; };
+		46BB7FAC16E038AF003E0379 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FAB16E038AF003E0379 /* LocationManager.m */; };
+		46BB7FAF16E04A5A003E0379 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FAE16E04A5A003E0379 /* AddressAnnotation.m */; };
+		46BB7FB116E04CD1003E0379 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB7FB016E04CD1003E0379 /* MobileCoreServices.framework */; };
+		46BB7FB416E05A0E003E0379 /* SMCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FB316E05A0E003E0379 /* SMCalloutView.m */; };
+		46BB7FB716E063D2003E0379 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB7FB616E063D2003E0379 /* QuartzCore.framework */; };
+		46BB7FC216E111DE003E0379 /* FoursquareAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FBA16E111DE003E0379 /* FoursquareAPI.m */; };
+		46BB7FC316E111DE003E0379 /* FSRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FBC16E111DE003E0379 /* FSRequester.m */; };
+		46BB7FC416E111DE003E0379 /* FSTargetCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FBE16E111DE003E0379 /* FSTargetCallback.m */; };
+		46BB7FC916E11511003E0379 /* FoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FC816E11511003E0379 /* FoursquareVenue.m */; };
+		46BB7FCE16E11C72003E0379 /* FoursquareAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7FCD16E11C72003E0379 /* FoursquareAnnotationView.xib */; };
+		46BB7FD116E11F08003E0379 /* FoursquareAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FD016E11F08003E0379 /* FoursquareAnnotationViewController.m */; };
+		46BB7FD416E12390003E0379 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BB7FD316E12390003E0379 /* AsyncImageView.m */; };
+		46BB7FDF16E14190003E0379 /* restaurant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7FDD16E14190003E0379 /* restaurant@2x.png */; };
+		46BB7FE016E14190003E0379 /* restaurant.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BB7FDE16E14190003E0379 /* restaurant.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46BB7F7D16E02E87003E0379 /* SUCTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUCTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BB7F8016E02E87003E0379 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46BB7F8216E02E87003E0379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46BB7F8416E02E87003E0379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46BB7F8816E02E87003E0379 /* SUCTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SUCTestApp-Info.plist"; sourceTree = "<group>"; };
+		46BB7F8A16E02E87003E0379 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46BB7F8C16E02E87003E0379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46BB7F8E16E02E87003E0379 /* SUCTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SUCTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		46BB7F8F16E02E87003E0379 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46BB7F9016E02E87003E0379 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46BB7F9216E02E87003E0379 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		46BB7F9416E02E87003E0379 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		46BB7F9616E02E87003E0379 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		46BB7F9816E02E87003E0379 /* FoursquareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoursquareViewController.h; sourceTree = "<group>"; };
+		46BB7F9916E02E87003E0379 /* FoursquareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoursquareViewController.m; sourceTree = "<group>"; };
+		46BB7F9C16E02E87003E0379 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FoursquareViewController.xib; sourceTree = "<group>"; };
+		46BB7FA616E0342F003E0379 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46BB7FA816E0344F003E0379 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46BB7FAA16E038AE003E0379 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		46BB7FAB16E038AF003E0379 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		46BB7FAD16E04A5A003E0379 /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAnnotation.h; sourceTree = "<group>"; };
+		46BB7FAE16E04A5A003E0379 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAnnotation.m; sourceTree = "<group>"; };
+		46BB7FB016E04CD1003E0379 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		46BB7FB216E05A0E003E0379 /* SMCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCalloutView.h; sourceTree = "<group>"; };
+		46BB7FB316E05A0E003E0379 /* SMCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCalloutView.m; sourceTree = "<group>"; };
+		46BB7FB616E063D2003E0379 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		46BB7FB916E111DE003E0379 /* FoursquareAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareAPI.h; sourceTree = "<group>"; };
+		46BB7FBA16E111DE003E0379 /* FoursquareAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareAPI.m; sourceTree = "<group>"; };
+		46BB7FBB16E111DE003E0379 /* FSRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRequester.h; sourceTree = "<group>"; };
+		46BB7FBC16E111DE003E0379 /* FSRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRequester.m; sourceTree = "<group>"; };
+		46BB7FBD16E111DE003E0379 /* FSTargetCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTargetCallback.h; sourceTree = "<group>"; };
+		46BB7FBE16E111DE003E0379 /* FSTargetCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTargetCallback.m; sourceTree = "<group>"; };
+		46BB7FC716E11511003E0379 /* FoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareVenue.h; sourceTree = "<group>"; };
+		46BB7FC816E11511003E0379 /* FoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareVenue.m; sourceTree = "<group>"; };
+		46BB7FCD16E11C72003E0379 /* FoursquareAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoursquareAnnotationView.xib; path = ../FoursquareAnnotationView.xib; sourceTree = "<group>"; };
+		46BB7FCF16E11F07003E0379 /* FoursquareAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareAnnotationViewController.h; sourceTree = "<group>"; };
+		46BB7FD016E11F08003E0379 /* FoursquareAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareAnnotationViewController.m; sourceTree = "<group>"; };
+		46BB7FD216E1238F003E0379 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		46BB7FD316E12390003E0379 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		46BB7FDD16E14190003E0379 /* restaurant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurant@2x.png"; sourceTree = "<group>"; };
+		46BB7FDE16E14190003E0379 /* restaurant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurant.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46BB7F7A16E02E87003E0379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB7FB716E063D2003E0379 /* QuartzCore.framework in Frameworks */,
+				46BB7FB116E04CD1003E0379 /* MobileCoreServices.framework in Frameworks */,
+				46BB7FA916E0344F003E0379 /* MapKit.framework in Frameworks */,
+				46BB7FA716E0342F003E0379 /* CoreLocation.framework in Frameworks */,
+				46BB7F8116E02E87003E0379 /* UIKit.framework in Frameworks */,
+				46BB7F8316E02E87003E0379 /* Foundation.framework in Frameworks */,
+				46BB7F8516E02E87003E0379 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46422F0916E15D6500A86B88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7F9B16E02E87003E0379 /* FoursquareViewController.xib */,
+				46BB7FCD16E11C72003E0379 /* FoursquareAnnotationView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		46422F0A16E15D7300A86B88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7F9816E02E87003E0379 /* FoursquareViewController.h */,
+				46BB7F9916E02E87003E0379 /* FoursquareViewController.m */,
+				46BB7FCF16E11F07003E0379 /* FoursquareAnnotationViewController.h */,
+				46BB7FD016E11F08003E0379 /* FoursquareAnnotationViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		46422F0B16E15D8B00A86B88 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7FAA16E038AE003E0379 /* LocationManager.h */,
+				46BB7FAB16E038AF003E0379 /* LocationManager.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		46BB7F7416E02E87003E0379 = {
+			isa = PBXGroup;
+			children = (
+				46BB7F8616E02E87003E0379 /* SUCTestApp */,
+				46BB7F7F16E02E87003E0379 /* Frameworks */,
+				46BB7F7E16E02E87003E0379 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46BB7F7E16E02E87003E0379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7F7D16E02E87003E0379 /* SUCTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46BB7F7F16E02E87003E0379 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7FB616E063D2003E0379 /* QuartzCore.framework */,
+				46BB7FB016E04CD1003E0379 /* MobileCoreServices.framework */,
+				46BB7FA816E0344F003E0379 /* MapKit.framework */,
+				46BB7FA616E0342F003E0379 /* CoreLocation.framework */,
+				46BB7F8016E02E87003E0379 /* UIKit.framework */,
+				46BB7F8216E02E87003E0379 /* Foundation.framework */,
+				46BB7F8416E02E87003E0379 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46BB7F8616E02E87003E0379 /* SUCTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				46422F0B16E15D8B00A86B88 /* Location */,
+				46422F0A16E15D7300A86B88 /* Controllers */,
+				46422F0916E15D6500A86B88 /* Views */,
+				46BB7FCA16E11519003E0379 /* Entities */,
+				46BB7FB816E111C3003E0379 /* FoursquareAPI */,
+				46BB7FB516E05A37003E0379 /* ExternViews */,
+				46BB7F8F16E02E87003E0379 /* AppDelegate.h */,
+				46BB7F9016E02E87003E0379 /* AppDelegate.m */,
+				46BB7F8716E02E87003E0379 /* Supporting Files */,
+			);
+			path = SUCTestApp;
+			sourceTree = "<group>";
+		};
+		46BB7F8716E02E87003E0379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7FDD16E14190003E0379 /* restaurant@2x.png */,
+				46BB7FDE16E14190003E0379 /* restaurant.png */,
+				46BB7F8816E02E87003E0379 /* SUCTestApp-Info.plist */,
+				46BB7F8916E02E87003E0379 /* InfoPlist.strings */,
+				46BB7F8C16E02E87003E0379 /* main.m */,
+				46BB7F8E16E02E87003E0379 /* SUCTestApp-Prefix.pch */,
+				46BB7F9216E02E87003E0379 /* Default.png */,
+				46BB7F9416E02E87003E0379 /* Default@2x.png */,
+				46BB7F9616E02E87003E0379 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46BB7FB516E05A37003E0379 /* ExternViews */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7FD216E1238F003E0379 /* AsyncImageView.h */,
+				46BB7FD316E12390003E0379 /* AsyncImageView.m */,
+				46BB7FB216E05A0E003E0379 /* SMCalloutView.h */,
+				46BB7FB316E05A0E003E0379 /* SMCalloutView.m */,
+			);
+			name = ExternViews;
+			sourceTree = "<group>";
+		};
+		46BB7FB816E111C3003E0379 /* FoursquareAPI */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7FB916E111DE003E0379 /* FoursquareAPI.h */,
+				46BB7FBA16E111DE003E0379 /* FoursquareAPI.m */,
+				46BB7FBB16E111DE003E0379 /* FSRequester.h */,
+				46BB7FBC16E111DE003E0379 /* FSRequester.m */,
+				46BB7FBD16E111DE003E0379 /* FSTargetCallback.h */,
+				46BB7FBE16E111DE003E0379 /* FSTargetCallback.m */,
+			);
+			name = FoursquareAPI;
+			sourceTree = "<group>";
+		};
+		46BB7FCA16E11519003E0379 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				46BB7FAD16E04A5A003E0379 /* AddressAnnotation.h */,
+				46BB7FAE16E04A5A003E0379 /* AddressAnnotation.m */,
+				46BB7FC716E11511003E0379 /* FoursquareVenue.h */,
+				46BB7FC816E11511003E0379 /* FoursquareVenue.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46BB7F7C16E02E87003E0379 /* SUCTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46BB7FA316E02E87003E0379 /* Build configuration list for PBXNativeTarget "SUCTestApp" */;
+			buildPhases = (
+				46BB7F7916E02E87003E0379 /* Sources */,
+				46BB7F7A16E02E87003E0379 /* Frameworks */,
+				46BB7F7B16E02E87003E0379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SUCTestApp;
+			productName = SUCTestApp;
+			productReference = 46BB7F7D16E02E87003E0379 /* SUCTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46BB7F7516E02E87003E0379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Phillipe Casorla Sagot";
+			};
+			buildConfigurationList = 46BB7F7816E02E87003E0379 /* Build configuration list for PBXProject "SUCTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 46BB7F7416E02E87003E0379;
+			productRefGroup = 46BB7F7E16E02E87003E0379 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46BB7F7C16E02E87003E0379 /* SUCTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46BB7F7B16E02E87003E0379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB7F8B16E02E87003E0379 /* InfoPlist.strings in Resources */,
+				46BB7F9316E02E87003E0379 /* Default.png in Resources */,
+				46BB7F9516E02E87003E0379 /* Default@2x.png in Resources */,
+				46BB7F9716E02E87003E0379 /* Default-568h@2x.png in Resources */,
+				46BB7F9D16E02E87003E0379 /* FoursquareViewController.xib in Resources */,
+				46BB7FCE16E11C72003E0379 /* FoursquareAnnotationView.xib in Resources */,
+				46BB7FDF16E14190003E0379 /* restaurant@2x.png in Resources */,
+				46BB7FE016E14190003E0379 /* restaurant.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46BB7F7916E02E87003E0379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB7F8D16E02E87003E0379 /* main.m in Sources */,
+				46BB7F9116E02E87003E0379 /* AppDelegate.m in Sources */,
+				46BB7F9A16E02E87003E0379 /* FoursquareViewController.m in Sources */,
+				46BB7FAC16E038AF003E0379 /* LocationManager.m in Sources */,
+				46BB7FAF16E04A5A003E0379 /* AddressAnnotation.m in Sources */,
+				46BB7FB416E05A0E003E0379 /* SMCalloutView.m in Sources */,
+				46BB7FC216E111DE003E0379 /* FoursquareAPI.m in Sources */,
+				46BB7FC316E111DE003E0379 /* FSRequester.m in Sources */,
+				46BB7FC416E111DE003E0379 /* FSTargetCallback.m in Sources */,
+				46BB7FC916E11511003E0379 /* FoursquareVenue.m in Sources */,
+				46BB7FD116E11F08003E0379 /* FoursquareAnnotationViewController.m in Sources */,
+				46BB7FD416E12390003E0379 /* AsyncImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46BB7F8916E02E87003E0379 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46BB7F8A16E02E87003E0379 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		46BB7F9B16E02E87003E0379 /* FoursquareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46BB7F9C16E02E87003E0379 /* en */,
+			);
+			name = FoursquareViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46BB7FA116E02E87003E0379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sabor Studio (NP4Y862LY9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sabor Studio (NP4Y862LY9)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2A9B7332-1774-4749-BA12-8E01B6D73F14";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A9B7332-1774-4749-BA12-8E01B6D73F14";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46BB7FA216E02E87003E0379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sabor Studio (NP4Y862LY9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sabor Studio (NP4Y862LY9)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "2A9B7332-1774-4749-BA12-8E01B6D73F14";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A9B7332-1774-4749-BA12-8E01B6D73F14";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46BB7FA416E02E87003E0379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SUCTestApp/SUCTestApp-Prefix.pch";
+				INFOPLIST_FILE = "SUCTestApp/SUCTestApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		46BB7FA516E02E87003E0379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SUCTestApp/SUCTestApp-Prefix.pch";
+				INFOPLIST_FILE = "SUCTestApp/SUCTestApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46BB7F7816E02E87003E0379 /* Build configuration list for PBXProject "SUCTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BB7FA116E02E87003E0379 /* Debug */,
+				46BB7FA216E02E87003E0379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46BB7FA316E02E87003E0379 /* Build configuration list for PBXNativeTarget "SUCTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BB7FA416E02E87003E0379 /* Debug */,
+				46BB7FA516E02E87003E0379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46BB7F7516E02E87003E0379 /* Project object */;
+}
